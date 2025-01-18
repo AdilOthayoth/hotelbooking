@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".Complain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CUSTOMER COMPLAINT"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="FULL NAME"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:background="@drawable/round_shape"
+            android:padding="18dp"
+            android:inputType="text"
+            android:id="@+id/full_name"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="EMAIL"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            android:background="@drawable/round_shape"
+            android:padding="18dp"
+            android:inputType="text"
+            android:id="@+id/email"/>
+
+        <EditText
+            android:id="@+id/desc_val"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="ENTER COMPLAINT HERE"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="textMultiLine"
+            android:background="@drawable/round_shape"
+            android:padding="18dp"
+            android:gravity="top|start"
+            android:minLines="4"
+            android:maxLines="10"
+            android:scrollbars="vertical"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="SUBMIT"
+            android:padding="18dp"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            android:id="@+id/sub_button"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
